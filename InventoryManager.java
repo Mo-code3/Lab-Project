@@ -11,7 +11,6 @@ public class InventoryManager {
                 arr[i][1] = name;
                 arr[i][2] = price;
                 arr[i][3] = quantity;
-                System.out.println("Product added successfully.");
                 return; // stop after adding one product
             }
         }
@@ -28,14 +27,17 @@ public class InventoryManager {
     }
 
     public void update(int id, String newName, double newPrice, int newQuantity) {
-        arr[id][1] = newName;
-        arr[id][2] = newPrice;
-        arr[id][3] = newQuantity;    
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i][0] != null && arr[i][0].equals(id)) {
+        arr[i][1] = newName;
+        arr[i][2] = newPrice;
+        arr[i][3] = newQuantity;    
+            }}
     }
 
-    public void delete() {
+    public void delete(int id) {
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i][0] != null) {
+            if (arr[i][0] != null && arr[i][0].equals(id)) {
                 arr[i][0] = null;
                 arr[i][1] = null;
                 arr[i][2] = null;
@@ -54,11 +56,30 @@ public class InventoryManager {
                 System.out.println("Price: " + arr[i][2]);
                 System.out.println("Quantity: " + arr[i][3]);
                 return;
-            } else {
-                System.out.println("Product not found.");
             }
         }
     }
     
+    public void main(String[] args) {
+        // Adding & Viewing
+        addProduct(2020,"ps5",2000.0,5);
+        addProduct(2025,"PC",4500.0,10);
+        addProduct(2018,"Nintendo Switch",1500.0,25);
+        view();
+        System.out.println(" ");
+
+
+        // Deleting & Viewing
+        delete(2020);
+        view();
+        System.out.println(" ");
+
+        // Updating & Viewing
+        update(2025, "Monitor", 599.99, 16);
+        view();
+        System.out.println(" ");
+
+        searchProduct(2025);
+    }
 
 } 
