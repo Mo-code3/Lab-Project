@@ -89,7 +89,7 @@ Product added successfully!
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/Inventory-Management-System.git
+   https://github.com/Mo-code3/Lab-Project.git
 2. Open the project in your preferred IDE
   (e.g., IntelliJ IDEA, Eclipse, or NetBeans).
 
