@@ -6,13 +6,30 @@ public class Product {
     private double price;
     private int quantity;
 
-    public void displayProductInfo() { //method to display product info
-        System.out.println("Product Id: " + productId);
+    
+    // Constructor (parameterized)
+    public Product(int productId, String productName, double price, int quantity) {
+        this.productId = productId;
+        this.productName = productName;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+
+
+    // Default constructor -- In case values aren't given
+    public Product() {}
+
+
+    // Display product info
+    public void displayProductInfo() {
+        System.out.println("Product ID: " + productId);
         System.out.println("Product Name: " + productName);
         System.out.println("Product Price: " + price);
         System.out.println("Product Quantity: " + quantity);
     }
 
+    // Getters and Setters
     public int getProductID() {
         return productId;
     }
@@ -24,7 +41,7 @@ public class Product {
     public String getProductName() {
         return productName;
     }
-    
+
     public void setProductName(String productName) {
         this.productName = productName;
     }
@@ -45,6 +62,3 @@ public class Product {
         this.quantity = quantity;
     }
 }
-
-
-
