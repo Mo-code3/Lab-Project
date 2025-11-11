@@ -12,16 +12,18 @@ public class InventoryManager {
                 arr[i][2] = price;
                 arr[i][3] = quantity;
                 System.out.println("Product added successfully.");
-                break; // stop after adding one product
+                return; // stop after adding one product
             }
         }
         System.out.println("Inventory full! Cannot add more products.");
     }
 
-    public void view(int id){
-        for(int i=0; i<arr.length; i++)
-        {
-            System.out.println(arr[i]);
+    public void view() {
+        System.out.println("ID\tName\tPrice\tQuantity");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i][0] != null) {
+                System.out.println(arr[i][0] + "\t" + arr[i][1] + "\t" + arr[i][2] + "\t" + arr[i][3]);
+            }
         }
     }
 
@@ -58,4 +60,5 @@ public class InventoryManager {
         }
     }
     
+
 } 
