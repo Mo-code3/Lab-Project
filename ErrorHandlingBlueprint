@@ -1,0 +1,23 @@
+1. InputMismatchException
+
+Wrong input type (letters instead of numbers).
+
+2. ArrayIndexOutOfBoundsException
+
+If a loop or index goes outside the array.
+
+3. NullPointerException
+
+When you try to access a null product slot.
+
+4. IllegalArgumentException
+
+Negative price, negative quantity, empty name, or invalid expiration date.
+
+5. ProductNotFoundException (custom)
+
+Thrown when update/delete/search fails because the ID does not exist.
+
+6. InventoryFullException (custom)
+
+Thrown when trying to add a product but the array is full.
