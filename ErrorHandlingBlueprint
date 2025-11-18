@@ -1,23 +1,40 @@
-1. InputMismatchException
+package src.Main;
 
-Wrong input type (letters instead of numbers).
+    class InputMismatchException extends Exception{
+        public InputMismatchException(String message){
+            super(message);
+        }
+    }
 
-2. ArrayIndexOutOfBoundsException
+    class ArrayIndexOutOfBoundsException extends Exception{
+        public ArrayIndexOutOfBoundsException(String message){
+            super(message);
+        }
+    }
 
-If a loop or index goes outside the array.
 
-3. NullPointerException
+    class NullPointerException extends Exception {
+        public NullPointerException(String message) {
+            super(message);
+        }
+    }
 
-When you try to access a null product slot.
+    class IllegalArgumentException extends Exception {
+        public IllegalArgumentException(String message) {
+            super(message);
+        }
+    }
 
-4. IllegalArgumentException
+    class ProductNotFound extends Exception {
+        public ProductNotFound(String message) {
+            super(message);
+        }
+    }
 
-Negative price, negative quantity, empty name, or invalid expiration date.
+    class InventoryFull extends Exception {
+        public InventoryFull(String message) {
+            super(message);
+        }
+    }
 
-5. ProductNotFoundException (custom)
 
-Thrown when update/delete/search fails because the ID does not exist.
-
-6. InventoryFullException (custom)
-
-Thrown when trying to add a product but the array is full.
