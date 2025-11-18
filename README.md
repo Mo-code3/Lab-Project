@@ -1,5 +1,7 @@
 # 🏬 Inventory Management System (Java)
 
+link: https://prod.liveshare.vsengsaas.visualstudio.com/join?99E43273A8C7BAD6587E1EF063A49AF8EFBB
+
 A simple **Object-Oriented Programming (OOP)** project built in **Java** for course **BCS202 – Introduction to Computing Science II**.  
 This project demonstrates core OOP principles such as **encapsulation**, **inheritance**, and **method overriding** through the management of a small inventory system.
 
