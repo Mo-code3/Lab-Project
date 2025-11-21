@@ -1,8 +1,6 @@
 # 🏬 Inventory Management System (Java)
 
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?EE70A69CFE53CE70981520119390E2954A03
-
 A simple **Object-Oriented Programming (OOP)** project built in **Java** for course **BCS202 – Introduction to Computing Science II**.  
 This project demonstrates core OOP principles such as **encapsulation**, **inheritance**, and **method overriding** through the management of a small inventory system.
 
@@ -33,25 +31,6 @@ It also introduces the concept of **inheritance** with a specialized `Perishable
 
 ---
 
-## 🏗️ Class Structure
-
-LabProject.Main
-│
-
-├── Product.java
-│ └── Defines product properties and display method
-│
-
-├── PerishableProduct.java
-│ └── Extends Product, adds expiry date, overrides display method
-│
-
-├── InventoryManager.java
-│ └── Handles add, view, update, delete, and search operations
-│
-
-└── MainApp.java
-└── Entry point demonstrating system functionality
 
 ## 💻 Sample Console Output
 
@@ -90,19 +69,15 @@ Product added successfully!
 
 ## 🛠️ How to Run
 
-1. **Clone the repository**
-   ```bash
-   https://github.com/Mo-code3/Lab-Project.git
-2. Open the project in your preferred IDE
-  (e.g., IntelliJ IDEA, Eclipse, or NetBeans).
+1- Clone the repository: (This command downloads the code):
+   git clone https://github.com/Mo-code3/Lab-Project.git
+   
 
-3. Run the program
+2- Navigate into the directory:
+   cd Lab-Project
 
-4. Navigate to MainApp.java
+3- Compile the code:
+   javac LabProject/GUI/*.java LabProject/Main/*.java
 
-5. Click Run ▶️ to execute
-
-6. View the console output
-   You should see the product being added and displayed successfully.
-
-
+4- Run the application:
+   java LabProject.GUI.MainFrame
